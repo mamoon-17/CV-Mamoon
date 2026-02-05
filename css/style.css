@@ -446,19 +446,45 @@ main {
 }
 
 /* Project Link */
+.project-link {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
 .project-link a {
-  display: inline-block;
-  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
   border: 2px solid #2dd4bf;
   color: #2dd4bf;
   text-decoration: none;
   border-radius: 6px;
-  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
 }
 
 .project-link a:hover {
   background-color: #2dd4bf;
   color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 212, 191, 0.4);
+}
+
+.project-link a.demo {
+  background-color: #2dd4bf;
+  color: #0f172a;
+  border-color: #2dd4bf;
+}
+
+.project-link a.demo:hover {
+  background-color: transparent;
+  color: #2dd4bf;
 }
 
 /* Responsive Adjustments */

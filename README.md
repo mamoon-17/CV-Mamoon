@@ -9,7 +9,7 @@ A personal CV/Portfolio website showcasing skills, education, experience, and pr
 
 ## Live Demo
 
-[View Live Website](https://your-username.github.io/CV-Mamoon)
+[View Live Website](https://cv-mamoon.vercel.app)
 
 ## Project Overview
 
@@ -60,7 +60,7 @@ CV-Mamoon/
 
 2. Open `index.html` in your browser
 
-Or simply visit the [Live Demo](https://your-username.github.io/CV-Mamoon)
+Or simply visit the [Live Demo](https://cv-mamoon.vercel.app)
 
 ## License
 
