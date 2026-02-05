@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mamoon Chishti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
@@ -19,25 +25,55 @@
       </nav>
     </header>
 
-    <main class="form">
-      <h3>Contact</h3>
-      <h2>Get In Touch</h2>
+    <main class="contact-container">
+      <div class="contact-info">
+        <h2>Let's work together</h2>
+        <p class="contact-intro">
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your vision. Feel free to reach out!
+        </p>
 
-      <form action="https://formspree.io/f/xdalnzqb" method="POST">
-        <label for="name">Your Name</label>
-        <input id="name" type="text" name="name" required />
+        <div class="contact-details">
+          <div class="detail-card">
+            <div class="detail-icon">✉</div>
+            <div class="detail-content">
+              <div class="detail-label">Email</div>
+              <a href="mailto:mamoonmasood17@gmail.com" class="detail-link"
+                >mamoonmasood17@gmail.com</a
+              >
+            </div>
+          </div>
 
-        <label for="email">Your Email</label>
-        <input id="email" type="email" name="email" required />
+          <div class="detail-card">
+            <div class="detail-icon location-icon">◉</div>
+            <div class="detail-content">
+              <div class="detail-label">Location</div>
+              <div class="detail-text">Lahore, Pakistan</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <label for="subject">Subject</label>
-        <input id="subject" type="text" name="subject" required />
+      <div class="contact-form-wrapper">
+        <h3>Contact</h3>
+        <h2>Get In Touch</h2>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <form action="https://formspree.io/f/xdalnzqb" method="POST">
+          <label for="name">Your Name</label>
+          <input id="name" type="text" name="name" required />
 
-        <button type="submit">Send</button>
-      </form>
+          <label for="email">Your Email</label>
+          <input id="email" type="email" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="subject" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
