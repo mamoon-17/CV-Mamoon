@@ -64,7 +64,7 @@ Or simply visit the [Live Demo](https://your-username.github.io/CV-Mamoon)
 
 ## License
 
-This project is for educational purposes as part of a Web Technologies course assignment.
+This project is for educational purposes as part of a Web Programming course assignment.
 
 ---
 
