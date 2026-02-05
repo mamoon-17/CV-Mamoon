@@ -10,7 +10,7 @@ CV-Mamoon/
 ├── index.html # Main HTML page
 ├── css/
 │ └── style.css # Stylesheet for the website
-├── images/ # Optional folder for images
+├── images/ # Folder for images
 └── README.md # Project documentation
 ```
 
