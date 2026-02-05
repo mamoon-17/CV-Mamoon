@@ -339,7 +339,6 @@ main {
 /* Projects Section */
 .projects {
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #1f2a38, #0f172a);
   color: white;
   display: flex;
   justify-content: center;
@@ -439,5 +438,160 @@ main {
 
   .project-image {
     max-height: 180px;
+  }
+}
+
+/*-----------------------------*/
+
+/*-----------------------------
+Experience Page
+-----------------------------*/
+
+.experience-main {
+  padding: 80px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.experience h2,
+.leadership-roles h2 {
+  font-size: 32px;
+  color: #2dd4bf;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Experience Section */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: rgba(15, 23, 42, 0.6);
+  border-radius: 12px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(45, 212, 191, 0.3);
+}
+
+.experience-card h3 {
+  font-size: 20px;
+  color: #2dd4bf;
+  margin-bottom: 10px;
+}
+
+.role-dates {
+  font-size: 14px;
+  color: #a1a1aa;
+  margin-bottom: 15px;
+}
+
+/* Modern bullet style */
+.experience-card ul {
+  list-style: none; /* modern bullets */
+  padding-left: 0;
+}
+
+.experience-card li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  font-size: 16px; /* match p text size */
+}
+
+.experience-card li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2dd4bf;
+  font-size: 16px; /* match li font size */
+  line-height: 1.6;
+}
+
+/* Leadership Roles Section */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* fixed 2 columns */
+  gap: 30px;
+}
+
+.roles-card {
+  background-color: rgba(15, 23, 42, 0.6);
+  border-radius: 12px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.roles-card:last-child {
+  grid-column: 1 / -1; /* span full width */
+  justify-self: center; /* center the card */
+  max-width: calc(50% - 15px); /* match the width of cards in the first row */
+}
+
+.roles-card h3 {
+  font-size: 20px;
+  color: #2dd4bf;
+  margin-bottom: 10px;
+}
+
+.roles-card .role-dates {
+  font-size: 14px;
+  color: #a1a1aa;
+  margin-bottom: 15px;
+}
+
+.roles-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.roles-card li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.roles-card li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2dd4bf;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .experience-main {
+    padding: 50px 5%;
+    gap: 50px;
+  }
+
+  .experience-grid,
+  .roles-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 }
