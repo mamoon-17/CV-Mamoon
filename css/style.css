@@ -1103,6 +1103,7 @@ Contact Form Page
     min-height: 60px;
     position: relative;
     flex-wrap: wrap;
+    z-index: 100;
   }
 
   .navbar nav {
